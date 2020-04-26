@@ -1,0 +1,214 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on eduardgz</title>
+        <link>https://eduardguez.github.io/posts/</link>
+        <description>Recent content in Posts on eduardgz</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Sun, 26 Apr 2020 14:07:58 -0500</lastBuildDate>
+        <atom:link href="https://eduardguez.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Learning Rust</title>
+            <link>https://eduardguez.github.io/posts/2020/04/learning-rust/</link>
+            <pubDate>Sun, 26 Apr 2020 14:07:58 -0500</pubDate>
+            
+            <guid>https://eduardguez.github.io/posts/2020/04/learning-rust/</guid>
+            <description>The Rust Programming Language  Instalar Rust Las instrucciones de instalación para cada sistema operativo pueden ser encontradas en rust-lang.org en la guía Installing Rust.
+Después de que Rust haya sido instalado, puedes confirmar la versión instalada fácilmente.
+$ rustc --version rustc x.y.z (abcabcabc yyyy-mm-dd)  Hola, Mundo! Este es el código fuente del programa tradicional &amp;ldquo;Hello World&amp;rdquo;.
+fn main() { println!(&amp;quot;Hello World!&amp;quot;); } Ingrese los siguientes comandos para compilar y ejecutar el archivo:</description>
+            <content type="html"><![CDATA[<h1 id="the-rust-programming-language">The Rust Programming Language</h1>
+<p><img src="https://www.rust-lang.org/static/images/rust-logo-blk.svg" alt="Rust logo"></p>
+<hr>
+<h2 id="instalar-rust">Instalar Rust</h2>
+<p>Las instrucciones de instalación para cada sistema operativo pueden ser encontradas en <a href="https://www.rust-lang.org">rust-lang.org</a> en la guía <a href="https://www.rust-lang.org/tools/install">Installing Rust</a>.</p>
+<p>Después de que Rust haya sido instalado, puedes confirmar la versión instalada fácilmente.</p>
+<pre><code>$ rustc --version
+rustc x.y.z (abcabcabc yyyy-mm-dd)
+</code></pre><hr>
+<h2 id="hola-mundo">Hola, Mundo!</h2>
+<p>Este es el código fuente del programa tradicional &ldquo;Hello World&rdquo;.</p>
+<pre><code>fn main() {
+    println!(&quot;Hello World!&quot;);
+}
+</code></pre><p>Ingrese los siguientes comandos para compilar y ejecutar el archivo:</p>
+<pre><code>$ rustc main.rs
+$ ./main
+</code></pre><hr>
+<h2 id="hola-cargo">Hola, Cargo!</h2>
+<p><strong>Cargo</strong> es el sistema de construcción y administrador de paquetes de Rust.</p>
+<hr>
+<p>Verifique si Cargo está instalado ingresando lo siguiente en su terminal:</p>
+<pre><code>$ cargo --version
+</code></pre><hr>
+<p>Para crear un proyecto usando Cargo en cualquier sistema operativo, ejecute lo siguiente:</p>
+<pre><code>$ cargo new hello_cargo
+$ cd hello_cargo
+</code></pre><hr>
+<p>Cargo ha generado dos archivos y un directorio:</p>
+<ul>
+<li><strong>Cargo.toml</strong>: Archivo de configuración de Cargo para compilar su programa.</li>
+<li><strong>Cargo.lock</strong>: Archivo que realiza un seguimiento de las versiones exactas de las dependencias en su proyecto.</li>
+<li><strong>src/</strong>: Cargo aloja el código en el directorio &ldquo;src/&quot;.</li>
+</ul>
+<hr>
+<p><strong>Cargo</strong> proporciona los siguiente comandos para construir y ejecutar un proyecto:</p>
+<ul>
+<li><code>cargo build</code> Construye el proyecto y crea un archivo ejecutable. Su ejecución por primer vez crea un nuevo archivo: <strong>Cargo.lock</strong>.</li>
+<li><code>cargo check</code> Verifica que el código pueda ser compilado.</li>
+<li><code>cargo run</code> Compila el código y ejecuta el ejecutable resultante.</li>
+</ul>
+<hr>
+<h1 id="variables">Variables</h1>
+<p>Por defecto en <strong>Rust</strong> las variables son inmutables, aprovechando así la seguridad y fácil concurrencia.</p>
+<pre><code>let any_number = 5;
+</code></pre><p>Sin embargo, tiene la opción de hacer que sus variables sean mutables.</p>
+<pre><code>let mut any_number = 5;
+</code></pre><hr>
+<h1 id="constantes">Constantes</h1>
+<p>Una constante se declara usando la palabra clave <code>const</code>, y el tipo de dato debe ser especificado seguido de dos puntos <code>:</code>.</p>
+<pre><code>const MAX_POINTS: u32 = 100_000;
+</code></pre><hr>
+<h1 id="sombreado">Sombreado</h1>
+<p>Es posible sombrear una variable repitiendo el mismo nombre de la variable y repitiendo el uso de <code>let</code>.</p>
+<pre><code>fn main() {
+  let x = 5;
+  let x = x + 1;
+  println!(&quot;The value of x is: {}&quot;, x); // The value of x is: 6
+}
+</code></pre><hr>
+<p>Al usar la palabra clave  <code>let</code>, es posible cambiar el tipo de dato y reutilizar el mismo nombre.</p>
+<pre><code>let spaces = &quot;   &quot;;
+let spaces = spaces.len();
+</code></pre><p>Ademas, el sombreado nos ahorra tener que inventar nombres diferentes para cada variable.</p>
+<hr>
+<h1 id="tipos-de-datos">Tipos de datos</h1>
+<hr>
+<h2 id="1-tipos-escalares">1) Tipos escalares</h2>
+<p>Un tipo escalar representa un valor único.</p>
+<hr>
+<h3 id="enteros">Enteros</h3>
+<p>Esta declaración de tipo indica que cada variante puede ser firmada o no y tienen un tamaño explicito.</p>
+<p>Firmado y sin firmar se refieren a si es posible que el número sea positivo o negativo.</p>
+<hr>
+<table>
+<thead>
+<tr>
+<th align="left">Longitud</th>
+<th align="center">Firmado</th>
+<th align="right">No firmado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">8 bits</td>
+<td align="center">i8</td>
+<td align="right">u8</td>
+</tr>
+<tr>
+<td align="left">16 bits</td>
+<td align="center">i16</td>
+<td align="right">u16</td>
+</tr>
+<tr>
+<td align="left">32 bits</td>
+<td align="center">i32</td>
+<td align="right">u32</td>
+</tr>
+<tr>
+<td align="left">64 bits</td>
+<td align="center">i32</td>
+<td align="right">u32</td>
+</tr>
+<tr>
+<td align="left">128 bits</td>
+<td align="center">i32</td>
+<td align="right">u32</td>
+</tr>
+<tr>
+<td align="left">arch</td>
+<td align="center">isize</td>
+<td align="right">usize</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li>
+<p>Una variante firmada (<code>i</code>) puede almacenar números de $-(2^{n-1})$ a $2^{n-1}-1$.</p>
+</li>
+<li>
+<p>Una variante sin firmar (<code>u</code>) puede almacenar números de 0 a $2^n-1$.</p>
+</li>
+<li>
+<p><code>n</code> es número de bits que usa la variante.</p>
+</li>
+<li>
+<p>Ademas, los tipos <code>isize</code> <code>usize</code> dependen del tipo de computadora en el que se ejecuta el programa.</p>
+</li>
+</ul>
+<hr>
+<h3 id="punto-flotante">Punto flotante</h3>
+<p>Los tipos de punto flotante de Rust son <code>f32</code> y <code>f64</code></p>
+<pre><code>fn main() {
+  let x = 2.0; // f64
+
+  let y: f32 = 3.0; // f32
+}
+</code></pre><p>El tipo <code>f32</code> es un flotador de precisión simple y <code>f64</code> tiene doble precisión.</p>
+<hr>
+<h3 id="booleanos">Booleanos</h3>
+<p>Un tipo booleano en Rust tiene dos valores posibles: <code>true</code> y <code>false</code>.</p>
+<pre><code>fn main() {
+  let t = true;
+
+  let f: bool = false; // with explicit type annotation
+}
+</code></pre><hr>
+<h3 id="caracteres">Caracteres</h3>
+<p>El tipo char de Rust tiene un tamaño de cuatro bytes y representa un valor escalar Unicode.</p>
+<pre><code>fn main() {
+  let c = 'z';
+  let z = 'ℤ';
+  let heart_eyed_cat = '😻';
+}
+</code></pre><hr>
+<h2 id="2-tipos-compuestos">2) Tipos compuestos</h2>
+<p>Los tipos compuestos pueden agrupar múltiples valores en un tipo.</p>
+<hr>
+<h3 id="tuplas">Tuplas</h3>
+<p>Una tupla es una colección de valores de diferentes tipos de datos.</p>
+<pre><code>fn main() {
+  let tup: (i32, f64, u8) = (500, 6.4, 1);
+}
+</code></pre><hr>
+<h3 id="matrices">Matrices</h3>
+<p>A diferencia de una tupla, una matriz es una colección de objetos del mismo tipo de dato.</p>
+<pre><code>fn main() {
+  let ex1a: [i32; 5] = [1, 2, 3, 4, 5];
+  let ex1b = [1, 2, 3, 4, 5];
+  let ex2a = [3; 5]; 
+  let ex2b = [3, 3, 3, 3, 3];
+}
+</code></pre><hr>
+<h3 id="funciones">Funciones</h3>
+<p>Las funciones declaran usando la palabra clave <code>fn</code>, y si devuelve un valor debe de especificarse el tipo de retorno despues de una flecha <code>-&gt;</code>.</p>
+<pre><code>fn plus_one(x: i32) -&gt; i32 {
+  x + 1
+}
+</code></pre><hr>
+<p>Podemos devolver un valor con la instrucción <code>return</code>, incluso desde bucles internos o <code>if</code>s.</p>
+<pre><code>fn main() {
+  let x = plus_one(5);
+  println!(&quot;The value of x is: {}&quot;, x);
+}
+</code></pre><p>Además, a Rust no le importa el orden en el que define sus funciones.</p>
+<hr>
+<h3 id="ejercicio-1-guessing-game">Ejercicio 1 &ldquo;Guessing Game&rdquo;</h3>
+<h3 id="ejercicio-2-fizz-buzz">Ejercicio 2 &ldquo;Fizz Buzz&rdquo;</h3>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>
