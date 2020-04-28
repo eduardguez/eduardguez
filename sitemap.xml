@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://eduardguez.github.io/posts/2020/04/aprendiendo-rust-b%C3%A1sico/</loc>
+    <lastmod>2020-04-26T14:07:58-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eduardguez.github.io/posts/</loc>
+    <lastmod>2020-04-26T14:07:58-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://eduardguez.github.io/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>

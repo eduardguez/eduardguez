@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Aprendiendo Rust: Básico</title>
+      <link>https://eduardguez.github.io/posts/2020/04/aprendiendo-rust-b%C3%A1sico/</link>
+      <pubDate>Sun, 26 Apr 2020 14:07:58 -0500</pubDate>
+      
+      <guid>https://eduardguez.github.io/posts/2020/04/aprendiendo-rust-b%C3%A1sico/</guid>
+      <description>¿Qué es Rust? Rust es un lenguage de programación que le ayuda escribir software más rápido y confiable. Al equilibrar la capacidad técnica de gran alcance y una gran experiencia de desarrollo, sin asumir el riesgo habitual de fallas o agujeros de seguridad. Mejor aún, está diseñado para guiarlo naturalmente hacia un código eficiente en terminos de velocidad y el uso de memoria.
+¿Quién está usando Rust? Es un lenguaje de programación que esta siendo utilizado para el desarrollo de motores de juegos, sistemas operativos, sistemas de archivos, componentes de navegador y motores de simulación para realidad virtual.</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>https://eduardguez.github.io/about/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
