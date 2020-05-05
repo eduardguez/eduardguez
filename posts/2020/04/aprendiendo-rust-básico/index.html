@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="map[name:Eduardo Rodríguez]">
 <meta name="description" content="¿Qué es Rust? Rust es un lenguage de programación que le ayuda escribir software más rápido y confiable. Al equilibrar la capacidad técnica de gran alcance y una gran experiencia de desarrollo, sin asumir el riesgo habitual de fallas o agujeros de seguridad. Mejor aún, está diseñado para guiarlo naturalmente hacia un código eficiente en terminos de velocidad y el uso de memoria.
-¿Quién está usando Rust? Es un lenguaje de programación que esta siendo utilizado para el desarrollo de motores de juegos, sistemas operativos, sistemas de archivos, componentes de navegador y motores de simulación para realidad virtual." />
+ &amp;ldquo;Rust es un lenguaje de programación de sistemas centrado en tres objetivos: seguridad, velocidad y concurrencia&amp;rdquo;." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#252627" />
@@ -44,10 +44,10 @@
 
 <meta itemprop="name" content="Aprendiendo Rust: Básico">
 <meta itemprop="description" content="¿Qué es Rust? Rust es un lenguage de programación que le ayuda escribir software más rápido y confiable. Al equilibrar la capacidad técnica de gran alcance y una gran experiencia de desarrollo, sin asumir el riesgo habitual de fallas o agujeros de seguridad. Mejor aún, está diseñado para guiarlo naturalmente hacia un código eficiente en terminos de velocidad y el uso de memoria.
-¿Quién está usando Rust? Es un lenguaje de programación que esta siendo utilizado para el desarrollo de motores de juegos, sistemas operativos, sistemas de archivos, componentes de navegador y motores de simulación para realidad virtual.">
+ &ldquo;Rust es un lenguaje de programación de sistemas centrado en tres objetivos: seguridad, velocidad y concurrencia&rdquo;.">
 <meta itemprop="datePublished" content="2020-04-26T14:07:58-05:00" />
 <meta itemprop="dateModified" content="2020-04-26T14:07:58-05:00" />
-<meta itemprop="wordCount" content="1996">
+<meta itemprop="wordCount" content="2450">
 <meta itemprop="image" content="https://www.rust-lang.org/static/images/rust-logo-blk.svg">
 
 
@@ -58,7 +58,7 @@
 
 <meta name="twitter:title" content="Aprendiendo Rust: Básico"/>
 <meta name="twitter:description" content="¿Qué es Rust? Rust es un lenguage de programación que le ayuda escribir software más rápido y confiable. Al equilibrar la capacidad técnica de gran alcance y una gran experiencia de desarrollo, sin asumir el riesgo habitual de fallas o agujeros de seguridad. Mejor aún, está diseñado para guiarlo naturalmente hacia un código eficiente en terminos de velocidad y el uso de memoria.
-¿Quién está usando Rust? Es un lenguaje de programación que esta siendo utilizado para el desarrollo de motores de juegos, sistemas operativos, sistemas de archivos, componentes de navegador y motores de simulación para realidad virtual."/>
+ &ldquo;Rust es un lenguaje de programación de sistemas centrado en tres objetivos: seguridad, velocidad y concurrencia&rdquo;."/>
 
 
 
@@ -127,7 +127,7 @@
     <main class="post">
 
         <div class="post-info">
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>10 minutes
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>12 minutes
 
             
 
@@ -153,8 +153,17 @@
     <li><a href="#comentarios">Comentarios</a></li>
     <li><a href="#variables">Variables</a></li>
     <li><a href="#constantes">Constantes</a></li>
+    <li><a href="#estáticas">Estáticas</a></li>
     <li><a href="#sombreado">Sombreado</a></li>
-    <li><a href="#operaciones-númericas">Operaciones númericas</a></li>
+    <li><a href="#operadores">Operadores</a>
+      <ul>
+        <li><a href="#operadores-aritméticos">Operadores aritméticos</a></li>
+        <li><a href="#operadores-de-comparación">Operadores de comparación</a></li>
+        <li><a href="#operadores-lógicos">Operadores lógicos</a></li>
+        <li><a href="#operadores-bit-a-bit">Operadores bit a bit</a></li>
+        <li><a href="#operadores-de-préstamo">Operadores de préstamo</a></li>
+      </ul>
+    </li>
     <li><a href="#tipos-de-datos">Tipos de datos</a>
       <ul>
         <li><a href="#1-tipos-escalares">1) Tipos escalares</a></li>
@@ -182,6 +191,10 @@
 <p><strong>Rust</strong> es un lenguage de programación que le ayuda escribir software más rápido y confiable. Al equilibrar la capacidad técnica
 de gran alcance y una gran experiencia de desarrollo, sin asumir el riesgo habitual de fallas o agujeros de seguridad.
 Mejor aún, está diseñado para guiarlo naturalmente hacia un código eficiente en terminos de velocidad y el uso de memoria.</p>
+<blockquote>
+<p><strong>&ldquo;Rust es un lenguaje de programación de sistemas centrado en tres objetivos: seguridad, velocidad y concurrencia&rdquo;.</strong>
+— Documentación de Rust.</p>
+</blockquote>
 <p><img src="https://www.rust-lang.org/static/images/rust-logo-blk.svg" alt="Rust logo"></p>
 <h2 id="quién-está-usando-rust">¿Quién está usando Rust?</h2>
 <p>Es un lenguaje de programación que esta siendo utilizado para el desarrollo de motores de juegos, sistemas operativos,
@@ -191,7 +204,7 @@ por la comunidad por cuatro años consecutivos, seguido de cerca por Python.</p>
 <p>Hoy empresas grandes y pequeñas estan utilizando Rust en producción en todo el mundo, incluidos: Mozilla, Coursera, Dropbox, npm y otros.
 Da un vistazo a la siguiente <a href="https://www.rust-lang.org/production/users">lista de usuarios actuales</a>.</p>
 <h2 id="cómo-se-involucra-mozilla-con-rust">¿Cómo se involucra Mozilla con Rust?</h2>
-<p>Rust está siendo desarrollado y patrocinado por <strong>Mozilla</strong> desde el año 2009 y publico su primer versión oficial el 15 de mayo de 2015. Actualmente Mozilla
+<p>Rust está siendo desarrollado y patrocinado por <strong>Mozilla</strong> desde el año 2009. Su primer versión estable, Rust 1.0, se presento el 15 de mayo de 2015. Actualmente Mozilla
 involucra Rust en su proyecto <a href="https://servo.org/">Servo</a>, que es motor de navegador moderno y de alto redimiento.</p>
 <hr>
 <h2 id="instalar-rust">Instalar Rust</h2>
@@ -199,7 +212,7 @@ involucra Rust en su proyecto <a href="https://servo.org/">Servo</a>, que es mot
 <a href="https://www.rust-lang.org">rust-lang.org</a> en la guía <a href="https://www.rust-lang.org/tools/install">Installing Rust</a>.</p>
 <p>Si está utlizando Linux o macOS, abra la terminal e ingrese el siguiente comando:</p>
 <pre><code>$ curl https://sh.rustup.rs -sSf | sh
-</code></pre><p>El comando anterior descaga <code>rustup</code> (instalador para Rust), que incluye el compilador <code>rustc</code> y <code>cargo</code> (administrador de paquetes).</p>
+</code></pre><p>El comando anterior descarga <code>rustup</code> (instalador para Rust), que incluye el compilador <code>rustc</code> y <code>cargo</code> (administrador de paquetes).</p>
 <p>Después de que Rust haya sido instalado, puedes confirmar la versión instalada fácilmente:</p>
 <pre><code>$ rustc --version
 rustc x.y.z (abcabcabc yyyy-mm-dd)
@@ -218,6 +231,7 @@ haya guardado el archivo) para compilar su programa:</p>
 </code></pre><p>Despues de compilar con éxito, Rust genera un ejecutable binario <code>main</code> similar a C o C++. Para ejecutar su programa ejecute el siguiente comando.</p>
 <pre><code>$ ./main
 </code></pre><p>Independientemente de su sistema operativo la cadena <code>Hello World!</code> debe imprimirse.</p>
+<p>También puede utlizar <a href="https://play.rust-lang.org/">Rust Playground</a>, una interfaz web para ejecutar código de Rust.</p>
 <hr>
 <h2 id="sintaxis">Sintaxis</h2>
 <p>La función <code>main</code> es el primer código que se ejecuta en cada programa ejecutable de Rust. Además, el cuerpo de la función
@@ -246,10 +260,14 @@ y cargarlos en <a href="https://crates.io/">creates.io</a> para compartir su có
 $ cd hello_cargo
 $ ls -F
 </code></pre><p>Cargo ha generado dos archivos y un directorio por nosotros:</p>
-<ul>
+<pre><code>├── src
+│   └── main.rs
+├── Cargo.lock
+├── Cargo.toml
+</code></pre><ul>
 <li><strong>Cargo.toml</strong>: Archivo de <strong>manifiesto</strong> que contiene todos los metadatos que Cargo necesita para compilar su paquete.</li>
 <li><strong>Cargo.lock</strong>: Archivo que realiza un seguimiento de las versiones exactas de las dependencias en su paquete.</li>
-<li><strong>src/</strong>: Cargo aloja el código en el directorio &ldquo;src/&quot;.</li>
+<li><strong>src/</strong>: Cargo aloja el código fuente en el directorio &ldquo;src/&quot;.</li>
 </ul>
 <p>La estructura del archivo <code>Cargo.toml</code> es la siguiente:</p>
 <pre><code>[package]
@@ -281,16 +299,21 @@ BLOCK_COMMENT:
 | /**/
 </code></pre><hr>
 <h2 id="variables">Variables</h2>
-<p>Las definiciones de variables en Rust comienzan con la plabra reservada <code>let</code> seguida del nombre de la variable y valor asignado.
+<p>Las definiciones de variables en Rust comienzan con la plabra clave <code>let</code> seguida del nombre de la variable y valor asignado.
 Por defecto en Rust las variables son inmutables, aprovechando así la seguridad y fácil concurrencia.</p>
 <pre><code>let any_number = 5;
-</code></pre><p>Sin embargo, tiene la opción de hacer que sus variables sean mutables, agregando <code>mut</code> delante de la palabra reservada <code>let</code>.</p>
+</code></pre><p>Sin embargo, tiene la opción de hacer que sus variables sean mutables, agregando <code>mut</code> delante de la palabra clave <code>let</code>.</p>
 <pre><code>let mut any_number = 5;
 </code></pre><hr>
 <h2 id="constantes">Constantes</h2>
 <p>Una constante se declara usando la palabra clave <code>const</code>, y el tipo de dato debe ser especificado seguido de dos puntos <code>:</code>.</p>
 <pre><code>const MAX_POINTS: u32 = 100_000;
 </code></pre><p>Las constantes no solo son inmutables por defecto, siempre son inmutables.</p>
+<hr>
+<h2 id="estáticas">Estáticas</h2>
+<p>La palabra clave <code>static</code> se útiliza para definir una &ldquo;variable global&rdquo;.</p>
+<pre><code>static N: i32 = 5;
+</code></pre><p>Solo hay una instancia para cada valor y está en una úbicación fija en la memoria.</p>
 <hr>
 <h2 id="sombreado">Sombreado</h2>
 <p>Es posible sombrear una variable repitiendo el mismo nombre de la variable y repitiendo el uso de <code>let</code>.</p>
@@ -304,26 +327,75 @@ Por defecto en Rust las variables son inmutables, aprovechando así la seguridad
 let spaces = spaces.len();
 </code></pre><p>Además, el sombreado nos ahorra tener que inventar nombres diferentes para cada variable.</p>
 <hr>
-<h2 id="operaciones-númericas">Operaciones númericas</h2>
-<p>Rust admite las operaciones mátematicas básicas que esperaría en otros lenguajes de programación: suma, resta, multiplicación
+<h2 id="operadores">Operadores</h2>
+<hr>
+<h3 id="operadores-aritméticos">Operadores aritméticos</h3>
+<p>Rust admite las operaciones mátematicas básicas que esperaría en otros lenguajes de programación: suma, resta, multiplicación,
 división y módulo.</p>
 <pre><code>fn main() {
-    // addition
-    let sum = 5 + 10;
+  // addition
+  let sum = 5 + 10;
 
-    // subtraction
-    let difference = 95.5 - 4.3;
+  // subtraction
+  let difference = 95.5 - 4.3;
 
-    // multiplication
-    let product = 4 * 30;
+  // multiplication
+  let product = 4 * 30;
 
-    // division
-    let quotient = 56.7 / 32.2;
+  // division
+  let quotient = 56.7 / 32.2;
 
-    // remainder
-    let remainder = 43 % 5;
+  // remainder
+  let remainder = 43 % 5;
 }
 </code></pre><hr>
+<h3 id="operadores-de-comparación">Operadores de comparación</h3>
+<p><code>== != &lt; &gt; &lt;= &gt;=</code></p>
+<pre><code>fn main() {
+  let a = 1;
+  let b = 2;
+
+  let c = a == b;  // false
+  let d = a != b;  // true
+  let e = a &lt; b;   // true
+  let f = a &gt; b;   // false
+  let g = a &lt;= a;  // true
+  let h = a &gt;= a;  // true
+}
+</code></pre><hr>
+<h3 id="operadores-lógicos">Operadores lógicos</h3>
+<p><code>! &amp;&amp; ||</code></p>
+<pre><code>fn main() {
+  let a = true;
+  let b = false;
+
+  let c = !a;      // false
+  let d = a &amp;&amp; b;  // false
+  let e = a || b;  // true
+}
+</code></pre><hr>
+<h3 id="operadores-bit-a-bit">Operadores bit a bit</h3>
+<p><code>&amp; | ^ &lt;&lt; &gt;&gt;</code></p>
+<pre><code>fn main() {
+  let a = 1;
+  let b = 2;
+
+  let c = a &amp; b;  //0  (01 &amp;&amp; 10 -&gt; 00)
+  let d = a | b;  //3  (01 || 10 -&gt; 11)
+  let e = a ^ b;  //3  (01 != 10 -&gt; 11)
+  let f = a &lt;&lt; b; //4  (Add b number of 0s to the end of a -&gt; '01'+'00' -&gt; 100)
+  let g = a &gt;&gt; b; //0  (Remove b number of bits from the end of a -&gt; o̶1̶ -&gt; 0)
+}
+</code></pre><hr>
+<h3 id="operadores-de-préstamo">Operadores de préstamo</h3>
+<p>Los operadores <code>&amp;&amp;</code> o <code>&amp;mut</code> se usan al hacer referencia a una variable original; tomando prestados los datos de la misma.</p>
+<pre><code>fn main() {
+  let mut guess = String::new();
+
+  io::stdin().read_line(&amp;mut guess).expect(&quot;Failed to read line&quot;);
+}
+</code></pre><p>El tipo de prestamo mutable, permiten tomar prestados y alterar una variable, por ejemplo al leer una línea de la terminal.</p>
+<hr>
 <h2 id="tipos-de-datos">Tipos de datos</h2>
 <hr>
 <h3 id="1-tipos-escalares">1) Tipos escalares</h3>
@@ -467,7 +539,7 @@ un booleano como condición.</p>
 }
 </code></pre><p>Sin embargo, los valores que tienen el potencial de ser resultados en cada <code>if</code> deben de ser del mismo tipo.</p>
 <h3 id="bucles">Bucles</h3>
-<p>Rust proporciona varios <code>bucles</code>: <code>loop</code>, <code>while</code> y <code>for</code>.</p>
+<p>Rust proporciona varios bucles: <code>loop</code>, <code>while</code> y <code>for</code>.</p>
 <h4 id="loop"><code>loop</code></h4>
 <p>La palabra clave <code>loop</code> le dice a Rust que ejecute un bloque de código una y otra véz, para siempre o hasta que explícitamente indique
 que se detenga.</p>
@@ -517,8 +589,27 @@ que demilitará el número de veces que el código se ejecuta.</p>
 }
 </code></pre><p>La seguridad y la concisión de los bucles <code>for</code> los convierten en la construcción de bucles más utilizada en Rust.</p>
 <hr>
+<h4 id="match"><code>match</code></h4>
+<p>Rust proporciona coincidencia de patrones a través de la palabra clave <code>match</code>, que se puede utilizar como un <code>switch</code> en C.</p>
+<pre><code>fn main() {
+  let mut guess = String::new();
+
+  println!(&quot;Please input your guess.&quot;);
+
+  io::stdin().read_line(&amp;mut guess)
+    .expect(&quot;Failed to read line&quot;);
+
+  let guess: u32 = match guess.trim().parse() {
+    Ok(guess) =&gt; println!(&quot;Ok!&quot;),
+    Err(_) =&gt; println!(&quot;Error :c&quot;),
+  };
+}
+</code></pre><p>Una expresión <code>match</code> está hecha de brazos. Un brazo consiste en un patrón y el código que debe ejecutarse si el valor dado al comienzo de la expresión <code>match</code> se ajusta al patrón de ese brazo.</p>
+<hr>
 <h2 id="ejercicio-1-guessing-game">Ejercicio 1 &ldquo;Guessing Game&rdquo;</h2>
 <h2 id="ejercicio-2-fizz-buzz">Ejercicio 2 &ldquo;Fizz Buzz&rdquo;</h2>
+<hr>
+<p>La implementación de algunos ejemplos relacionados con el post se pueden encontrar en <a href="https://github.com/eduardguez/learning-rust">mi repositorio de Github</a>.</p>
 
             </div>
         </article>
@@ -527,7 +618,7 @@ que demilitará el número de veces que el código se ejecuta.</p>
 
         <div class="post-info">
 
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>1996 Words</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>2450 Words</p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-04-26 14:07 -0500</p>
         </div>
