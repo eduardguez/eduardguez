@@ -365,7 +365,7 @@ un booleano como condición.</p>
 }
 </code></pre><p>Sin embargo, los valores que tienen el potencial de ser resultados en cada <code>if</code> deben de ser del mismo tipo.</p>
 <hr>
-<h4 id="match"><code>match</code></h4>
+<h3 id="match"><code>match</code></h3>
 <p>Rust proporciona coincidencia de patrones a través de la palabra clave <code>match</code>, que se puede utilizar como un <code>switch</code> en C/C++.</p>
 <pre><code>fn main() {
   let mut guess = String::new();
