@@ -224,7 +224,7 @@ división y módulo.</p>
 <hr>
 <h2 id="tipos-de-datos">Tipos de datos</h2>
 <hr>
-<h3 id="1-tipos-escalares">1) Tipos escalares</h3>
+<h3 id="tipos-escalares">Tipos escalares</h3>
 <p>Un tipo escalar representa un valor único.</p>
 <h4 id="enteros">Enteros</h4>
 <p>Esta declaración de tipo indica que cada variante puede ser firmada o no y tienen un tamaño explicito.</p>
@@ -307,7 +307,7 @@ división y módulo.</p>
   let heart_eyed_cat = '😻';
 }
 </code></pre><hr>
-<h3 id="2-tipos-compuestos">2) Tipos compuestos</h3>
+<h3 id="tipos-compuestos">Tipos compuestos</h3>
 <p>Los tipos compuestos pueden agrupar múltiples valores en un tipo.</p>
 <h4 id="tuplas">Tuplas</h4>
 <p>Una tupla es una colección de valores de diferentes tipos de datos.</p>
@@ -414,7 +414,7 @@ y comenzar una nueva.</p>
 
   println!(&quot;The result is {}&quot;, result);
 }
-</code></pre><p>A diferencia de los otros tipos de bucles en Rust, <code>loops</code> puede ser usado como expresesiones que retornan valores haciendo uso de <code>break</code>.</p>
+</code></pre><p>A diferencia de los otros tipos de bucles en Rust, <code>loop</code> puede ser usado como expresesión que retorna un valor haciendo uso de <code>break</code>.</p>
 <h4 id="while"><code>while</code></h4>
 <p>La sintaxis del ciclo <code>while</code> es similar a la de otros lenguajes de programación, en la que se define una condición verdadera
 que demilitará el número de veces que el código se ejecuta.</p>
