@@ -35,7 +35,7 @@ Da un vistazo a la siguiente <a href="https://www.rust-lang.org/production/users
 por la comunidad por cuatro años consecutivos, seguido de cerca por Python.</p>
 <h2 id="cómo-se-involucra-mozilla-con-rust">¿Cómo se involucra Mozilla con Rust?</h2>
 <p>Rust está siendo desarrollado y patrocinado por <strong>Mozilla</strong> desde el año 2009. Su primer versión estable, Rust 1.0, se presento el 15 de mayo de 2015. Actualmente Mozilla
-involucra Rust en su proyecto <a href="https://servo.org/">Servo</a>, que es motor de navegador moderno y de alto redimiendo.</p>
+involucra Rust en su proyecto <a href="https://servo.org/">Servo</a>, que es un motor de navegador moderno y de alto redimiendo.</p>
 <hr>
 <h2 id="instalar-rust">Instalar Rust</h2>
 <p>El primer paso es instalar Rust. Las instrucciones de instalación para cada sistema operativo pueden ser encontradas en
@@ -97,7 +97,7 @@ $ ls -F
 </code></pre><ul>
 <li><strong>Cargo.toml</strong>: Archivo de <strong>manifiesto</strong> que contiene todos los metadatos que Cargo necesita para compilar su paquete.</li>
 <li><strong>Cargo.lock</strong>: Archivo que realiza un seguimiento de las versiones exactas de las dependencias en su paquete.</li>
-<li><strong>src/</strong>: Cargo aloja el código fuente en el directorio &ldquo;src/&quot;.</li>
+<li><strong>src/</strong>: Cargo aloja el código fuente en este directorio.</li>
 </ul>
 <p>La estructura del archivo <code>Cargo.toml</code> es la siguiente:</p>
 <pre><code>[package]
@@ -152,7 +152,7 @@ Por defecto en Rust las variables son inmutables, aprovechando así la seguridad
   let x = x + 1;
   println!(&quot;The value of x is: {}&quot;, x); // The value of x is: 6
 }
-</code></pre><p>Al usar la palabra clave  <code>let</code>, es posible cambiar el tipo de dato y reutilizar el mismo nombre.</p>
+</code></pre><p>Al usar la palabra clave <code>let</code>, es posible cambiar el tipo de dato y reutilizar el mismo nombre.</p>
 <pre><code>let spaces = &quot;   &quot;;
 let spaces = spaces.len();
 </code></pre><p>Además, el sombreado nos ahorra tener que inventar nombres diferentes para cada variable.</p>
@@ -278,7 +278,7 @@ división y módulo.</p>
 <p>Una variante sin firmar (<code>u</code>) puede almacenar números de 0 a $2^n-1$.</p>
 </li>
 <li>
-<p><code>n</code> es número de bits que usa la variante.</p>
+<p><code>n</code> es el número de bits que usa la variante.</p>
 </li>
 <li>
 <p>Además, los tipos <code>isize</code> <code>usize</code> dependen del tipo de computadora en el que se ejecuta el programa.</p>
