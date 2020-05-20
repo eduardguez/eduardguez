@@ -45,7 +45,7 @@
 <meta itemprop="description" content="¿Qué es Rust? Rust es un lenguaje de programación de sistemas creado originalmente por Graydon Hoare y actualmente patrocinado por Mozilla Research. Es un lenguaje de programación que le ayuda escribir software más rápido y confiable. Al equilibrar la capacidad técnica de gran alcance y una gran experiencia de desarrollo, sin asumir el riesgo habitual de fallas o agujeros de seguridad. Mejor aún, está diseñado para guiarlo naturalmente hacia un código eficiente en términos de velocidad y el uso de memoria.">
 <meta itemprop="datePublished" content="2020-04-26T14:07:58-05:00" />
 <meta itemprop="dateModified" content="2020-04-26T14:07:58-05:00" />
-<meta itemprop="wordCount" content="2527">
+<meta itemprop="wordCount" content="2524">
 <meta itemprop="image" content="https://www.rust-lang.org/static/images/rust-logo-blk.svg">
 
 
@@ -208,16 +208,16 @@ por la comunidad por cuatro años consecutivos, seguido de cerca por Python.</p>
 involucra Rust en su proyecto <a href="https://servo.org/">Servo</a>, que es un motor de navegador moderno y de alto redimiendo.</p>
 <hr>
 <h2 id="instalar-rust">Instalar Rust</h2>
-<p>El primer paso es instalar Rust. Las instrucciones de instalación para cada sistema operativo pueden ser encontradas en
+<p>Las instrucciones de instalación para cada sistema operativo pueden ser encontradas en
 <a href="https://www.rust-lang.org">rust-lang.org</a> en la guía <a href="https://www.rust-lang.org/tools/install">Installing Rust</a>.</p>
 <p>Si está utilizando Linux o macOS, abra la terminal e ingrese el siguiente comando:</p>
 <pre><code>$ curl https://sh.rustup.rs -sSf | sh
 </code></pre><p>El comando anterior descarga <code>rustup</code> (instalador para Rust), que incluye el compilador <code>rustc</code> y <code>cargo</code> (administrador de paquetes).</p>
-<p>Después de que Rust haya sido instalado, puedes confirmar la versión instalada fácilmente:</p>
+<p>Después de que Rust haya sido instalado, puede confirmar la versión instalada fácilmente:</p>
 <pre><code>$ rustc --version
 rustc x.y.z (abcabcabc yyyy-mm-dd)
 </code></pre><p>Si ve está información a instalado Rust con éxito.</p>
-<p>Si lo que desea es actualizar a la última versión, ejecute el siguiente comando:</p>
+<p>Si lo que desea es obtener la última versión de Rust, ejecute el siguiente comando:</p>
 <pre><code>$ rustup update
 </code></pre><hr>
 <h2 id="hola-mundo">Hola, Mundo!</h2>
@@ -225,10 +225,10 @@ rustc x.y.z (abcabcabc yyyy-mm-dd)
 <pre><code>fn main() {
     println!(&quot;Hello World!&quot;);
 }
-</code></pre><p>A continuación, cree un archivo <code>main.rs</code> para almacenar su código Rust e ingrese el siguiente comando en la terminal (desde la ruta donde se
-haya guardado el archivo) para compilar su programa:</p>
+</code></pre><p>A continuación, cree un archivo <code>main.rs</code> para almacenar su código Rust e ingrese el siguiente comando en la terminal (desde la ruta donde fue
+guardado el archivo) para compilar su programa:</p>
 <pre><code>$ rustc main.rs
-</code></pre><p>Después de compilar con éxito, Rust genera un ejecutable binario <code>main</code> similar a C o C++. Para ejecutar su programa ejecute el siguiente comando.</p>
+</code></pre><p>Después de compilar con éxito, Rust genera un ejecutable binario <code>main</code> similar a C o C++. Para ejecutar su programa ingrese el siguiente comando:</p>
 <pre><code>$ ./main
 </code></pre><p>Independientemente de su sistema operativo la cadena <code>Hello World!</code> debe imprimirse.</p>
 <p>También puede utilizar <a href="https://play.rust-lang.org/">Rust Playground</a>, una interfaz web para ejecutar código de Rust.</p>
@@ -278,18 +278,22 @@ edition = &quot;2018&quot;
 </code></pre><p>Dentro del encabezado de sección <code>[package]</code> se establece la información de configuración del paquete que Cargo necesita para compilarlo.</p>
 <p>Cargo está configurado para buscar dependencias en <a href="https://crates.io/">creates.io</a> de forma predeterminada, en la sección <code>[dependencies]</code>
 se enumera todos los paquetes de código (cajas) de su proyecto. Sólo el nombre y una cadena de versión son necesarios.</p>
+<p>Da un vistazo a los requisitos de versión <a href="https://github.com/steveklabnik/semver#requirements">semver</a>.</p>
 <pre><code>[dependencies]
 time = &quot;0.1.12&quot;
-</code></pre><p>Echa un vistazo a los requisitos de versión <a href="https://github.com/steveklabnik/semver#requirements">semver</a>.</p>
-<p>Cargo proporciona los siguientes comandos para construir y ejecutar un proyecto:</p>
+</code></pre><p>Cargo proporciona los siguientes comandos para construir y ejecutar un proyecto:</p>
 <ul>
-<li><code>cargo build</code> Construye el proyecto y crea un archivo ejecutable. Su ejecución por primer vez crea un nuevo archivo: <strong>Cargo.lock</strong>.</li>
+<li><code>cargo build</code> Construye el proyecto y crea un archivo ejecutable.
+<ul>
+<li>Su ejecución por primer vez crea un nuevo archivo <strong>Cargo.lock</strong>.</li>
+</ul>
+</li>
 <li><code>cargo check</code> Verifica que el código pueda ser compilado.</li>
 <li><code>cargo run</code> Compila el código y ejecuta el ejecutable resultante.</li>
 </ul>
 <hr>
 <h2 id="comentarios">Comentarios</h2>
-<p>Los comentarios no documentales en Rust siguen el estilo general de C++:</p>
+<p>Los comentarios no documentales en Rust siguen el estilo general de C++.</p>
 <pre><code>LINE_COMMENT:
 //(~ [/ !] |//) ~\n *
 |//
@@ -390,7 +394,7 @@ división y módulo.</p>
 
   io::stdin().read_line(&amp;mut guess).expect(&quot;Failed to read line&quot;);
 }
-</code></pre><p>El tipo de préstamo mutable, permiten tomar prestados y alterar una variable, por ejemplo al leer una línea de la terminal.</p>
+</code></pre><p>El tipo de préstamo mutable, permiten tomar prestados los datos y alterar una variable, por ejemplo al leer una línea de la terminal.</p>
 <hr>
 <h2 id="tipos-de-datos">Tipos de datos</h2>
 <hr>
@@ -451,7 +455,7 @@ división y módulo.</p>
 <p><code>n</code> es el número de bits que usa la variante.</p>
 </li>
 <li>
-<p>Además, los tipos <code>isize</code> <code>usize</code> dependen del tipo de computadora en el que se ejecuta el programa.</p>
+<p>Los tipos <code>isize</code> <code>usize</code> dependen de la arquitectura del computador en el que se ejecuta el programa.</p>
 </li>
 </ul>
 <h4 id="punto-flotante">Punto flotante</h4>
@@ -470,7 +474,7 @@ división y módulo.</p>
   let f: bool = false; // with explicit type annotation
 }
 </code></pre><h4 id="caracteres">Caracteres</h4>
-<p>El tipo char de Rust tiene un tamaño de cuatro bytes y representa un valor escalar Unicode.</p>
+<p>El tipo <code>char</code> de Rust tiene un tamaño de cuatro bytes y representa un valor escalar Unicode.</p>
 <pre><code>fn main() {
   let c = 'z';
   let z = 'ℤ';
@@ -494,7 +498,7 @@ división y módulo.</p>
 }
 </code></pre><hr>
 <h2 id="funciones">Funciones</h2>
-<p>Las funciones declaran usando la palabra clave <code>fn</code>, y si devuelve un valor debe de especificarse el tipo de retorno después de una flecha <code>-&gt;</code>.</p>
+<p>Las funciones se declaran usando la palabra clave <code>fn</code>, y si devuelve un valor debe de especificarse el tipo de retorno después de una flecha <code>-&gt;</code>.</p>
 <pre><code>fn plus_one(x: i32) -&gt; i32 {
   x + 1
 }
@@ -510,7 +514,7 @@ división y módulo.</p>
 <hr>
 <h3 id="if--else-if--else"><code>if</code> / <code>else if</code> / <code>else</code></h3>
 <p>Las expresiones <code>if</code>, <code>else if</code> y <code>else</code> le permiten bifurcar su código según las condiciones. A diferencia de JavaScript y Ruby,
-Rust no intentará automáticamente convertir tipos no booleanos a booleanos. Es necesario ser explicito y proporcionar a un sentencia <code>if</code>
+Rust no intentará automáticamente convertir tipos no booleanos a booleanos. Es necesario ser explicito y proporcionar a una sentencia <code>if</code>
 un booleano como condición.</p>
 <pre><code>fn main() {
   let number = 6;
@@ -526,15 +530,15 @@ un booleano como condición.</p>
   }
 }
 </code></pre><p>Rust solo ejecuta el bloque para la primera condición verdadera, el resto lo ignora.</p>
-<p>Debido a que <code>if</code> es una expresión, es posible usarla en la declaración de una variable.</p>
+<p>Debido a que <code>if</code> es una expresión, es posible usarla en la declaración de una variable. Sin embargo, los valores que tienen el potencial de ser resultados
+en cada <code>if</code> deben de ser del mismo tipo.</p>
 <pre><code>fn main() {
   let condition = true;
   let number = if condition { 5 } else { 6 };
 
   println!(&quot;The value of number is: {}&quot;, number);
 }
-</code></pre><p>Sin embargo, los valores que tienen el potencial de ser resultados en cada <code>if</code> deben de ser del mismo tipo.</p>
-<hr>
+</code></pre><hr>
 <h3 id="match"><code>match</code></h3>
 <p>Rust proporciona coincidencia de patrones a través de la palabra clave <code>match</code>, que se puede utilizar como un <code>switch</code> en C/C++.</p>
 <pre><code>fn main() {
@@ -587,7 +591,7 @@ y comenzar una nueva.</p>
 </code></pre><p>A diferencia de los otros tipos de bucles en Rust, <code>loop</code> puede ser usado como expresesión que retorna un valor haciendo uso de <code>break</code>.</p>
 <h4 id="while"><code>while</code></h4>
 <p>La sintaxis del ciclo <code>while</code> es similar a la de otros lenguajes de programación, en la que se define una condición verdadera
-que demilitará el número de veces que el código se ejecuta.</p>
+que delimitará el número de veces que el código se ejecuta.</p>
 <pre><code>fn main() {
   let mut number = 3;
 
@@ -597,7 +601,7 @@ que demilitará el número de veces que el código se ejecuta.</p>
   }
   println!(&quot;LIFTOFF!!!&quot;);
 }
-</code></pre><p>Esta construcción elimina una gran cantidad de anidación que sería necesaria si se ha utilizado <code>loop</code>, <code>if</code>, <code>else</code>, y <code>break</code>.</p>
+</code></pre><p>Esta construcción elimina una gran cantidad de anidación que sería necesaria si se ha utilizado <code>loop</code>, <code>if</code>, <code>else</code> y/o <code>break</code>.</p>
 <h4 id="for"><code>for</code></h4>
 <p>Como alternativa más concisa, puede usar un bucle <code>for</code> y ejecutar un código para cada elemento de una colección.</p>
 <pre><code>fn main() {
@@ -621,7 +625,7 @@ que demilitará el número de veces que el código se ejecuta.</p>
 
         <div class="post-info">
 
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>2527 Words</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>2524 Words</p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-04-26 14:07 -0500</p>
         </div>
