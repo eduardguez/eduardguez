@@ -31,7 +31,7 @@ También admite programación genérica y metaprogramación, tanto en estilos es
 <p>Hoy empresas grandes y pequeñas están utilizando Rust en producción en todo el mundo, incluidos: Mozilla, Coursera, Dropbox, npm, Atlassian, Postmates y otros.
 Da un vistazo a la siguiente <a href="https://www.rust-lang.org/production/users">lista de usuarios actuales</a>.</p>
 <p>Está siendo utilizado para el desarrollo de motores de juegos, sistemas operativos, sistemas de archivos, componentes de navegador y motores de simulación para realidad virtual.</p>
-<p>Stack Overflow coloca a Rust como uno de los <a href="https://insights.stackoverflow.com/survey/2018/#most-loved-dreaded-and-wanted">lenguajes de programación más queridos</a>
+<p>Stack Overflow coloca a Rust como uno de los <a href="https://insights.stackoverflow.com/survey/2020/#technology-most-loved-dreaded-and-wanted-languages-loved">lenguajes de programación más queridos</a>
 por la comunidad por cuatro años consecutivos, seguido de cerca por Python.</p>
 <h2 id="cómo-se-involucra-mozilla-con-rust">¿Cómo se involucra Mozilla con Rust?</h2>
 <p>Rust está siendo desarrollado y patrocinado por <strong>Mozilla</strong> desde el año 2009. Su primer versión estable, Rust 1.0, se presento el 15 de mayo de 2015. Actualmente Mozilla
@@ -447,6 +447,14 @@ que delimitará el número de veces que el código se ejecuta.</p>
 <h2 id="ejercicio-2-fizz-buzz">Ejercicio 2 &ldquo;Fizz Buzz&rdquo;</h2>
 <hr>
 <p>La implementación de algunos ejemplos relacionados con el post se pueden encontrar en <a href="https://github.com/eduardguez/learning-rust">mi repositorio de Github</a>.</p>
+<hr>
+<h2 id="referencias">Referencias</h2>
+<p>Klabnik, S., &amp; Nichols, C. (2018). The Rust Programming Language (1st Edition ed.). San Francisco, CA: No Starch Press.</p>
+<p>rust-lang. (s. f.-a). Install Rust. Recuperado 26 de abril de 2020, de <a href="https://www.rust-lang.org/tools/install">https://www.rust-lang.org/tools/install</a></p>
+<p>rust-lang. (s. f.-b). Learn Rust. Recuperado 27 de marzo de 2020, de <a href="https://www.rust-lang.org/learn">https://www.rust-lang.org/learn</a></p>
+<p>rust-lang. (s. f.-c). Production users. Recuperado 26 de abril de 2020, de <a href="https://www.rust-lang.org/production/users">https://www.rust-lang.org/production/users</a></p>
+<p>Servo. (s. f.). Servo, the parallel browser engine. Recuperado 26 de abril de 2020, de <a href="https://servo.org/">https://servo.org/</a></p>
+<p>Stack Overflow. (s. f.). Stack Overflow Developer Survey 2020. Recuperado 26 de abril de 2020, de <a href="https://insights.stackoverflow.com/survey/2020/#technology-most-loved-dreaded-and-wanted-languages-loved">https://insights.stackoverflow.com/survey/2020/#technology-most-loved-dreaded-and-wanted-languages-loved</a></p>
 ]]></content>
         </item>
         
