@@ -24,7 +24,7 @@ Mejor aún, está diseñado para guiarlo naturalmente hacia un código eficiente
 <p><strong>&ldquo;Rust es un lenguaje de programación de sistemas centrado en tres objetivos: seguridad, velocidad y concurrencia&rdquo;.</strong>
 — Documentación de Rust.</p>
 </blockquote>
-<p>Es un lenguaje de programación compilado, de código abierto, multi-paradigmático, que admite procedimientos imperativos, actores concurrentes, estilos funcionales puros y orientado a objetos.
+<p>Es lenguaje de programación compilado, de código abierto, multiparadigma que soporta programación por procedimientos, imperativa, funcional pura y orientado a objetos.
 También admite programación genérica y metaprogramación, tanto en estilos estáticos como dinámicos.</p>
 <p><img src="https://www.rust-lang.org/static/images/rust-logo-blk.svg" alt="Rust logo"></p>
 <h2 id="quién-está-usando-rust">¿Quién está usando Rust?</h2>
