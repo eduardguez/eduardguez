@@ -67,7 +67,7 @@ guardado el archivo) para compilar su programa:</p>
 <p>La función <code>main</code> es el primer código que se ejecuta en cada programa ejecutable de Rust. Además, el cuerpo de la función
 se envuelve entre llaves <code>{}</code> y se terminan todas las expresiones con punto y coma <code>;</code>.</p>
 <pre><code>fn main() {
-    println!(&quot;Hello World!&quot;);
+  println!(&quot;Hello World!&quot;);
 }
 </code></pre><p><code>println!</code> es una macro de Rust para imprimir texto. Una macro se distingue de una función por llevar un signo de admiración <code>!</code>.</p>
 <hr>
@@ -89,7 +89,7 @@ y cargarlos en <a href="https://crates.io/">creates.io</a> para compartir su có
 <pre><code>$ cargo new hello_cargo
 $ cd hello_cargo
 $ ls -F
-</code></pre><p>Cargo ha generado dos archivos y un directorio por nosotros:</p>
+</code></pre><p>Cargo ha generado dos archivos y un directorio e inicializado un nuevo repositorio de <code>Git</code> por nosotros:</p>
 <pre><code>├── src
 │   └── main.rs
 ├── Cargo.lock
@@ -449,16 +449,14 @@ que delimitará el número de veces que el código se ejecuta.</p>
 <p>La implementación de algunos ejemplos relacionados con el post se pueden encontrar en <a href="https://github.com/eduardguez/learning-rust">mi repositorio de Github</a>.</p>
 <hr>
 <h2 id="referencias">Referencias</h2>
-<p>García, M. (2019, enero 22). Primeros pasos con Rust y porque aprenderlo. Recuperado 26 de abril de 2020, de <a href="https://dev.to/mattdark/primeros-pasos-con-rust-y-porque-aprenderlo-1oc3">https://dev.to/mattdark/primeros-pasos-con-rust-y-porque-aprenderlo-1oc3</a></p>
-<p>Klabnik, S., &amp; Nichols, C. (2018). The Rust Programming Language (1st Edition ed.). San Francisco, CA: No Starch Press.</p>
-<p>Madunuwan, D. (2020, abril 26). Why Rust? Recuperado 5 de mayo de 2020, de <a href="https://learning-rust.github.io/docs/a1.why_rust.html">https://learning-rust.github.io/docs/a1.why_rust.html</a></p>
-<p>Preston-Werner, T. (s. f.). Semantic Versioning 2.0.0. Recuperado 30 de mayo de 2020, de <a href="https://semver.org/">https://semver.org/</a></p>
-<p>Rust. (2018, enero 19). Recuperado 26 de abril de 2020, de <a href="https://research.mozilla.org/rust/">https://research.mozilla.org/rust/</a></p>
-<p>rust-lang. (s. f.-a). Install Rust. Recuperado 26 de abril de 2020, de <a href="https://www.rust-lang.org/tools/install">https://www.rust-lang.org/tools/install</a></p>
-<p>rust-lang. (s. f.-b). Learn Rust. Recuperado 27 de marzo de 2020, de <a href="https://www.rust-lang.org/learn">https://www.rust-lang.org/learn</a></p>
-<p>rust-lang. (s. f.-c). Production users. Recuperado 26 de abril de 2020, de <a href="https://www.rust-lang.org/production/users">https://www.rust-lang.org/production/users</a></p>
-<p>Servo. (s. f.). Servo, the parallel browser engine. Recuperado 26 de abril de 2020, de <a href="https://servo.org/">https://servo.org/</a></p>
-<p>Stack Overflow. (s. f.). Stack Overflow Developer Survey 2020. Recuperado 26 de abril de 2020, de <a href="https://insights.stackoverflow.com/survey/2020/">https://www.rust-lang.org/production/users</a>#technology-most-loved-dreaded-and-wanted-languages-loved</p>
+<p>Klabnik, S., &amp; Nichols, C. (2019). The Rust Programming Language (Covers Rust 2018). San Francisco, CA: No Starch Press.</p>
+<p>Madunuwan, D. (2020, 26 abril). Why Rust? Learning Rust. <a href="https://learning-rust.github.io/docs/a1.why_rust.html">https://learning-rust.github.io/docs/a1.why_rust.html</a></p>
+<p>Preston-Werner, T. (2009). Semantic Versioning 2.0.0. <a href="https://semver.org/">https://semver.org/</a></p>
+<p>Mozilla. (2018, 19 enero). Rust. Mozilla Research. <a href="https://research.mozilla.org/rust/">https://research.mozilla.org/rust/</a></p>
+<p>rust-lang. (2018). Install Rust. rust-lang. <a href="https://www.rust-lang.org/tools/install">https://www.rust-lang.org/tools/install</a></p>
+<p>rust-lang. (2018). Production users. <a href="https://www.rust-lang.org/production/users">https://www.rust-lang.org/production/users</a></p>
+<p>Servo. (2018). Servo, the parallel browser engine. <a href="https://servo.org/">https://servo.org/</a></p>
+<p>Stack Overflow. (2020). Stack Overflow Developer Survey 2020. <a href="https://insights.stackoverflow.com/survey/2020/">https://insights.stackoverflow.com/survey/2020/</a></p>
 ]]></content>
         </item>
         

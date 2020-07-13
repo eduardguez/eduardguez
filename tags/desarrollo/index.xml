@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>desarrollo on @eduardgz</title>
+    <link>https://eduardguez.github.io/tags/desarrollo/</link>
+    <description>Recent content in desarrollo on @eduardgz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 26 Apr 2020 14:07:58 -0500</lastBuildDate>
+    
+	<atom:link href="https://eduardguez.github.io/tags/desarrollo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Aprendiendo Rust: Básico</title>
+      <link>https://eduardguez.github.io/posts/2020/04/aprendiendo-rust-b%C3%A1sico/</link>
+      <pubDate>Sun, 26 Apr 2020 14:07:58 -0500</pubDate>
+      
+      <guid>https://eduardguez.github.io/posts/2020/04/aprendiendo-rust-b%C3%A1sico/</guid>
+      <description>¿Qué es Rust? Rust es un lenguaje de programación de sistemas creado originalmente por Graydon Hoare y actualmente patrocinado por Mozilla Research. Es un lenguaje de programación que le ayuda escribir software más rápido y confiable. Al equilibrar la capacidad técnica de gran alcance y una gran experiencia de desarrollo, sin asumir el riesgo habitual de fallas o agujeros de seguridad. Mejor aún, está diseñado para guiarlo naturalmente hacia un código eficiente en términos de velocidad y el uso de memoria.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="map[name:Eduardo Peralta Rodríguez]">
 <meta name="description" content="¿Qué es Rust? Rust es un lenguaje de programación de sistemas creado originalmente por Graydon Hoare y actualmente patrocinado por Mozilla Research. Es un lenguaje de programación que le ayuda escribir software más rápido y confiable. Al equilibrar la capacidad técnica de gran alcance y una gran experiencia de desarrollo, sin asumir el riesgo habitual de fallas o agujeros de seguridad. Mejor aún, está diseñado para guiarlo naturalmente hacia un código eficiente en términos de velocidad y el uso de memoria." />
-<meta name="keywords" content="" />
+<meta name="keywords" content=", rust, cargo, desarrollo, software, programación" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#252627" />
 <link rel="canonical" href="https://eduardguez.github.io/posts/2020/04/aprendiendo-rust-b%C3%A1sico/" />
@@ -45,12 +45,12 @@
 <meta itemprop="description" content="¿Qué es Rust? Rust es un lenguaje de programación de sistemas creado originalmente por Graydon Hoare y actualmente patrocinado por Mozilla Research. Es un lenguaje de programación que le ayuda escribir software más rápido y confiable. Al equilibrar la capacidad técnica de gran alcance y una gran experiencia de desarrollo, sin asumir el riesgo habitual de fallas o agujeros de seguridad. Mejor aún, está diseñado para guiarlo naturalmente hacia un código eficiente en términos de velocidad y el uso de memoria.">
 <meta itemprop="datePublished" content="2020-04-26T14:07:58-05:00" />
 <meta itemprop="dateModified" content="2020-04-26T14:07:58-05:00" />
-<meta itemprop="wordCount" content="2677">
+<meta itemprop="wordCount" content="2603">
 <meta itemprop="image" content="https://www.rust-lang.org/static/images/rust-logo-blk.svg">
 
 
 
-<meta itemprop="keywords" content="" />
+<meta itemprop="keywords" content="rust,cargo,desarrollo,software,programación," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.rust-lang.org/static/images/rust-logo-blk.svg"/>
 
@@ -238,7 +238,7 @@ guardado el archivo) para compilar su programa:</p>
 <p>La función <code>main</code> es el primer código que se ejecuta en cada programa ejecutable de Rust. Además, el cuerpo de la función
 se envuelve entre llaves <code>{}</code> y se terminan todas las expresiones con punto y coma <code>;</code>.</p>
 <pre><code>fn main() {
-    println!(&quot;Hello World!&quot;);
+  println!(&quot;Hello World!&quot;);
 }
 </code></pre><p><code>println!</code> es una macro de Rust para imprimir texto. Una macro se distingue de una función por llevar un signo de admiración <code>!</code>.</p>
 <hr>
@@ -260,7 +260,7 @@ y cargarlos en <a href="https://crates.io/">creates.io</a> para compartir su có
 <pre><code>$ cargo new hello_cargo
 $ cd hello_cargo
 $ ls -F
-</code></pre><p>Cargo ha generado dos archivos y un directorio por nosotros:</p>
+</code></pre><p>Cargo ha generado dos archivos y un directorio e inicializado un nuevo repositorio de <code>Git</code> por nosotros:</p>
 <pre><code>├── src
 │   └── main.rs
 ├── Cargo.lock
@@ -620,16 +620,14 @@ que delimitará el número de veces que el código se ejecuta.</p>
 <p>La implementación de algunos ejemplos relacionados con el post se pueden encontrar en <a href="https://github.com/eduardguez/learning-rust">mi repositorio de Github</a>.</p>
 <hr>
 <h2 id="referencias">Referencias</h2>
-<p>García, M. (2019, enero 22). Primeros pasos con Rust y porque aprenderlo. Recuperado 26 de abril de 2020, de <a href="https://dev.to/mattdark/primeros-pasos-con-rust-y-porque-aprenderlo-1oc3">https://dev.to/mattdark/primeros-pasos-con-rust-y-porque-aprenderlo-1oc3</a></p>
-<p>Klabnik, S., &amp; Nichols, C. (2018). The Rust Programming Language (1st Edition ed.). San Francisco, CA: No Starch Press.</p>
-<p>Madunuwan, D. (2020, abril 26). Why Rust? Recuperado 5 de mayo de 2020, de <a href="https://learning-rust.github.io/docs/a1.why_rust.html">https://learning-rust.github.io/docs/a1.why_rust.html</a></p>
-<p>Preston-Werner, T. (s. f.). Semantic Versioning 2.0.0. Recuperado 30 de mayo de 2020, de <a href="https://semver.org/">https://semver.org/</a></p>
-<p>Rust. (2018, enero 19). Recuperado 26 de abril de 2020, de <a href="https://research.mozilla.org/rust/">https://research.mozilla.org/rust/</a></p>
-<p>rust-lang. (s. f.-a). Install Rust. Recuperado 26 de abril de 2020, de <a href="https://www.rust-lang.org/tools/install">https://www.rust-lang.org/tools/install</a></p>
-<p>rust-lang. (s. f.-b). Learn Rust. Recuperado 27 de marzo de 2020, de <a href="https://www.rust-lang.org/learn">https://www.rust-lang.org/learn</a></p>
-<p>rust-lang. (s. f.-c). Production users. Recuperado 26 de abril de 2020, de <a href="https://www.rust-lang.org/production/users">https://www.rust-lang.org/production/users</a></p>
-<p>Servo. (s. f.). Servo, the parallel browser engine. Recuperado 26 de abril de 2020, de <a href="https://servo.org/">https://servo.org/</a></p>
-<p>Stack Overflow. (s. f.). Stack Overflow Developer Survey 2020. Recuperado 26 de abril de 2020, de <a href="https://insights.stackoverflow.com/survey/2020/">https://www.rust-lang.org/production/users</a>#technology-most-loved-dreaded-and-wanted-languages-loved</p>
+<p>Klabnik, S., &amp; Nichols, C. (2019). The Rust Programming Language (Covers Rust 2018). San Francisco, CA: No Starch Press.</p>
+<p>Madunuwan, D. (2020, 26 abril). Why Rust? Learning Rust. <a href="https://learning-rust.github.io/docs/a1.why_rust.html">https://learning-rust.github.io/docs/a1.why_rust.html</a></p>
+<p>Preston-Werner, T. (2009). Semantic Versioning 2.0.0. <a href="https://semver.org/">https://semver.org/</a></p>
+<p>Mozilla. (2018, 19 enero). Rust. Mozilla Research. <a href="https://research.mozilla.org/rust/">https://research.mozilla.org/rust/</a></p>
+<p>rust-lang. (2018). Install Rust. rust-lang. <a href="https://www.rust-lang.org/tools/install">https://www.rust-lang.org/tools/install</a></p>
+<p>rust-lang. (2018). Production users. <a href="https://www.rust-lang.org/production/users">https://www.rust-lang.org/production/users</a></p>
+<p>Servo. (2018). Servo, the parallel browser engine. <a href="https://servo.org/">https://servo.org/</a></p>
+<p>Stack Overflow. (2020). Stack Overflow Developer Survey 2020. <a href="https://insights.stackoverflow.com/survey/2020/">https://insights.stackoverflow.com/survey/2020/</a></p>
 
             </div>
         </article>
@@ -637,8 +635,11 @@ que delimitará el número de veces que el código se ejecuta.</p>
         <hr />
 
         <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://eduardguez.github.io/tags/rust">rust</a></span><span class="tag"><a href="https://eduardguez.github.io/tags/cargo">cargo</a></span><span class="tag"><a href="https://eduardguez.github.io/tags/desarrollo">desarrollo</a></span><span class="tag"><a href="https://eduardguez.github.io/tags/software">software</a></span><span class="tag"><a href="https://eduardguez.github.io/tags/programaci%C3%B3n">programación</a></span>
+                </p>
 
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>2677 Words</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>2603 Words</p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-04-26 14:07 -0500</p>
         </div>
