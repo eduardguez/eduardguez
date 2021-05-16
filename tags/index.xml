@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on @eduardguez</title>
-    <link>https://eduardguez.github.io/tags/</link>
+    <link>https://eduardo-rdguez.github.io/tags/</link>
     <description>Recent content in Tags on @eduardguez</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 26 Apr 2020 14:07:58 -0500</lastBuildDate>
     
-	<atom:link href="https://eduardguez.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://eduardo-rdguez.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>cargo</title>
-      <link>https://eduardguez.github.io/tags/cargo/</link>
+      <link>https://eduardo-rdguez.github.io/tags/cargo/</link>
       <pubDate>Sun, 26 Apr 2020 14:07:58 -0500</pubDate>
       
-      <guid>https://eduardguez.github.io/tags/cargo/</guid>
+      <guid>https://eduardo-rdguez.github.io/tags/cargo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>desarrollo</title>
-      <link>https://eduardguez.github.io/tags/desarrollo/</link>
+      <link>https://eduardo-rdguez.github.io/tags/desarrollo/</link>
       <pubDate>Sun, 26 Apr 2020 14:07:58 -0500</pubDate>
       
-      <guid>https://eduardguez.github.io/tags/desarrollo/</guid>
+      <guid>https://eduardo-rdguez.github.io/tags/desarrollo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>programación</title>
-      <link>https://eduardguez.github.io/tags/programaci%C3%B3n/</link>
+      <link>https://eduardo-rdguez.github.io/tags/programaci%C3%B3n/</link>
       <pubDate>Sun, 26 Apr 2020 14:07:58 -0500</pubDate>
       
-      <guid>https://eduardguez.github.io/tags/programaci%C3%B3n/</guid>
+      <guid>https://eduardo-rdguez.github.io/tags/programaci%C3%B3n/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rust</title>
-      <link>https://eduardguez.github.io/tags/rust/</link>
+      <link>https://eduardo-rdguez.github.io/tags/rust/</link>
       <pubDate>Sun, 26 Apr 2020 14:07:58 -0500</pubDate>
       
-      <guid>https://eduardguez.github.io/tags/rust/</guid>
+      <guid>https://eduardo-rdguez.github.io/tags/rust/</guid>
       <description></description>
     </item>
     
     <item>
       <title>software</title>
-      <link>https://eduardguez.github.io/tags/software/</link>
+      <link>https://eduardo-rdguez.github.io/tags/software/</link>
       <pubDate>Sun, 26 Apr 2020 14:07:58 -0500</pubDate>
       
-      <guid>https://eduardguez.github.io/tags/software/</guid>
+      <guid>https://eduardo-rdguez.github.io/tags/software/</guid>
       <description></description>
     </item>
     

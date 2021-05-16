@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>@eduardguez</title>
-    <link>https://eduardguez.github.io/</link>
+    <link>https://eduardo-rdguez.github.io/</link>
     <description>Recent content on @eduardguez</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 10 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://eduardguez.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://eduardo-rdguez.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Eduardo Peralta Rodríguez</title>
-      <link>https://eduardguez.github.io/about/</link>
+      <link>https://eduardo-rdguez.github.io/about/</link>
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://eduardguez.github.io/about/</guid>
+      <guid>https://eduardo-rdguez.github.io/about/</guid>
       <description>Graduado como Ingeniero en Sistemas Computacionales por el Tecnológico Nacional de México. Apasionado por el desarrollo de software, dinamismo e innovación.
 Durante mi estancia académica realice una estadía de investigación en el marco del Convenio de cooperación para el desarrollo de capacidades en materia educativa, científica, tecnológica, de innovación e intercambio académico entre la Universidad Politécnica del Valle de México (UPVM) Estado de México, México y la Universidad Politécnica de Madrid (UPM), España.</description>
     </item>
     
     <item>
       <title>Aprendiendo Rust: Básico</title>
-      <link>https://eduardguez.github.io/posts/2020/04/aprendiendo-rust-b%C3%A1sico/</link>
+      <link>https://eduardo-rdguez.github.io/posts/2020/04/aprendiendo-rust-b%C3%A1sico/</link>
       <pubDate>Sun, 26 Apr 2020 14:07:58 -0500</pubDate>
       
-      <guid>https://eduardguez.github.io/posts/2020/04/aprendiendo-rust-b%C3%A1sico/</guid>
+      <guid>https://eduardo-rdguez.github.io/posts/2020/04/aprendiendo-rust-b%C3%A1sico/</guid>
       <description>¿Qué es Rust? Rust es un lenguaje de programación de sistemas creado originalmente por Graydon Hoare y actualmente patrocinado por Mozilla Research. Es un lenguaje de programación que le ayuda escribir software más rápido y confiable. Al equilibrar la capacidad técnica de gran alcance y una gran experiencia de desarrollo, sin asumir el riesgo habitual de fallas o agujeros de seguridad. Mejor aún, está diseñado para guiarlo naturalmente hacia un código eficiente en términos de velocidad y el uso de memoria.</description>
     </item>
     
