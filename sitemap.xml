@@ -1,69 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://eduardo-rdguez.github.io/</loc>
-    <lastmod>2020-05-10T00:00:00+00:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://eduardo-rdguez.github.io/about/</loc>
     <lastmod>2020-05-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://eduardo-rdguez.github.io/</loc>
+    <lastmod>2020-04-26T14:07:58-05:00</lastmod>
+  </url><url>
     <loc>https://eduardo-rdguez.github.io/posts/2020/04/aprendiendo-rust-b%C3%A1sico/</loc>
     <lastmod>2020-04-26T14:07:58-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://eduardo-rdguez.github.io/tags/cargo/</loc>
     <lastmod>2020-04-26T14:07:58-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://eduardo-rdguez.github.io/tags/desarrollo/</loc>
     <lastmod>2020-04-26T14:07:58-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://eduardo-rdguez.github.io/tags/mozilla/</loc>
     <lastmod>2020-04-26T14:07:58-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://eduardo-rdguez.github.io/posts/</loc>
     <lastmod>2020-04-26T14:07:58-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://eduardo-rdguez.github.io/tags/programaci%C3%B3n/</loc>
     <lastmod>2020-04-26T14:07:58-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://eduardo-rdguez.github.io/tags/rust/</loc>
     <lastmod>2020-04-26T14:07:58-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://eduardo-rdguez.github.io/tags/sistemas/</loc>
     <lastmod>2020-04-26T14:07:58-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://eduardo-rdguez.github.io/tags/software/</loc>
     <lastmod>2020-04-26T14:07:58-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://eduardo-rdguez.github.io/tags/</loc>
     <lastmod>2020-04-26T14:07:58-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://eduardo-rdguez.github.io/categories/</loc>
   </url>
-  
 </urlset>

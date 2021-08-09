@@ -236,41 +236,41 @@ división y módulo.</p>
 <table>
 <thead>
 <tr>
-<th align="left">Longitud</th>
-<th align="center">Firmado</th>
-<th align="right">No firmado</th>
+<th style="text-align:left">Longitud</th>
+<th style="text-align:center">Firmado</th>
+<th style="text-align:right">No firmado</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">8 bits</td>
-<td align="center">i8</td>
-<td align="right">u8</td>
+<td style="text-align:left">8 bits</td>
+<td style="text-align:center">i8</td>
+<td style="text-align:right">u8</td>
 </tr>
 <tr>
-<td align="left">16 bits</td>
-<td align="center">i16</td>
-<td align="right">u16</td>
+<td style="text-align:left">16 bits</td>
+<td style="text-align:center">i16</td>
+<td style="text-align:right">u16</td>
 </tr>
 <tr>
-<td align="left">32 bits</td>
-<td align="center">i32</td>
-<td align="right">u32</td>
+<td style="text-align:left">32 bits</td>
+<td style="text-align:center">i32</td>
+<td style="text-align:right">u32</td>
 </tr>
 <tr>
-<td align="left">64 bits</td>
-<td align="center">i32</td>
-<td align="right">u32</td>
+<td style="text-align:left">64 bits</td>
+<td style="text-align:center">i32</td>
+<td style="text-align:right">u32</td>
 </tr>
 <tr>
-<td align="left">128 bits</td>
-<td align="center">i32</td>
-<td align="right">u32</td>
+<td style="text-align:left">128 bits</td>
+<td style="text-align:center">i32</td>
+<td style="text-align:right">u32</td>
 </tr>
 <tr>
-<td align="left">arch</td>
-<td align="center">isize</td>
-<td align="right">usize</td>
+<td style="text-align:left">arch</td>
+<td style="text-align:center">isize</td>
+<td style="text-align:right">usize</td>
 </tr>
 </tbody>
 </table>

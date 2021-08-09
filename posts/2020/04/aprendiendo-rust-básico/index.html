@@ -42,14 +42,9 @@
 
 
 <meta itemprop="name" content="Aprendiendo Rust: Básico">
-<meta itemprop="description" content="¿Qué es Rust? Rust es un lenguaje de programación de sistemas creado originalmente por Graydon Hoare y actualmente patrocinado por Mozilla Research. Es un lenguaje de programación que le ayuda escribir software más rápido y confiable. Al equilibrar la capacidad técnica de gran alcance y una gran experiencia de desarrollo, sin asumir el riesgo habitual de fallas o agujeros de seguridad. Mejor aún, está diseñado para guiarlo naturalmente hacia un código eficiente en términos de velocidad y el uso de memoria.">
-<meta itemprop="datePublished" content="2020-04-26T14:07:58-05:00" />
+<meta itemprop="description" content="¿Qué es Rust? Rust es un lenguaje de programación de sistemas creado originalmente por Graydon Hoare y actualmente patrocinado por Mozilla Research. Es un lenguaje de programación que le ayuda escribir software más rápido y confiable. Al equilibrar la capacidad técnica de gran alcance y una gran experiencia de desarrollo, sin asumir el riesgo habitual de fallas o agujeros de seguridad. Mejor aún, está diseñado para guiarlo naturalmente hacia un código eficiente en términos de velocidad y el uso de memoria."><meta itemprop="datePublished" content="2020-04-26T14:07:58-05:00" />
 <meta itemprop="dateModified" content="2020-04-26T14:07:58-05:00" />
-<meta itemprop="wordCount" content="2604">
-<meta itemprop="image" content="https://www.rust-lang.org/static/images/rust-logo-blk.svg">
-
-
-
+<meta itemprop="wordCount" content="2604"><meta itemprop="image" content="https://www.rust-lang.org/static/images/rust-logo-blk.svg">
 <meta itemprop="keywords" content="rust,cargo,mozilla,software,sistemas,desarrollo,programación," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.rust-lang.org/static/images/rust-logo-blk.svg"/>
@@ -82,7 +77,7 @@
     <div class="logo">
         
             <span class="logo__mark">></span>
-            <span class="logo__text">$ cd ~eduardo-rdguez</span>
+            <span class="logo__text">$ ~eduardo-rdguez</span>
             <span class="logo__cursor" style=
                   "
                    
@@ -174,8 +169,8 @@
     <li><a href="#funciones">Funciones</a></li>
     <li><a href="#flujos-de-control">Flujos de control</a>
       <ul>
-        <li><a href="#if--else-if--else">if / else if / else</a></li>
-        <li><a href="#match">match</a></li>
+        <li><a href="#if--else-if--else"><code>if</code> / <code>else if</code> / <code>else</code></a></li>
+        <li><a href="#match"><code>match</code></a></li>
         <li><a href="#bucles">Bucles</a></li>
       </ul>
     </li>
@@ -411,41 +406,41 @@ división y módulo.</p>
 <table>
 <thead>
 <tr>
-<th align="left">Longitud</th>
-<th align="center">Firmado</th>
-<th align="right">No firmado</th>
+<th style="text-align:left">Longitud</th>
+<th style="text-align:center">Firmado</th>
+<th style="text-align:right">No firmado</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">8 bits</td>
-<td align="center">i8</td>
-<td align="right">u8</td>
+<td style="text-align:left">8 bits</td>
+<td style="text-align:center">i8</td>
+<td style="text-align:right">u8</td>
 </tr>
 <tr>
-<td align="left">16 bits</td>
-<td align="center">i16</td>
-<td align="right">u16</td>
+<td style="text-align:left">16 bits</td>
+<td style="text-align:center">i16</td>
+<td style="text-align:right">u16</td>
 </tr>
 <tr>
-<td align="left">32 bits</td>
-<td align="center">i32</td>
-<td align="right">u32</td>
+<td style="text-align:left">32 bits</td>
+<td style="text-align:center">i32</td>
+<td style="text-align:right">u32</td>
 </tr>
 <tr>
-<td align="left">64 bits</td>
-<td align="center">i32</td>
-<td align="right">u32</td>
+<td style="text-align:left">64 bits</td>
+<td style="text-align:center">i32</td>
+<td style="text-align:right">u32</td>
 </tr>
 <tr>
-<td align="left">128 bits</td>
-<td align="center">i32</td>
-<td align="right">u32</td>
+<td style="text-align:left">128 bits</td>
+<td style="text-align:center">i32</td>
+<td style="text-align:right">u32</td>
 </tr>
 <tr>
-<td align="left">arch</td>
-<td align="center">isize</td>
-<td align="right">usize</td>
+<td style="text-align:left">arch</td>
+<td style="text-align:center">isize</td>
+<td style="text-align:right">usize</td>
 </tr>
 </tbody>
 </table>
@@ -716,18 +711,16 @@ que delimitará el número de veces que el código se ejecuta.</p>
 
 
 
-<script type="text/javascript" src="https://eduardo-rdguez.github.io/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+<script type="text/javascript" src="https://eduardo-rdguez.github.io/bundle.min.a0f363fdf81cdc5cfacc447a79c33189eb000d090336cd04aac8ee256f423b3133b836c281944c19c75e38d0b0b449f01ce5807e37798b7ac94ac1db51983fc4.js" integrity="sha512-oPNj/fgc3Fz6zER6ecMxiesADQkDNs0EqsjuJW9COzEzuDbCgZRMGcdeONCwtEnwHOWAfjd5i3rJSsHbUZg/xA=="></script>
     
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LXQ1L2K4QT"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'G-LXQ1L2K4QT', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-LXQ1L2K4QT', { 'anonymize_ip': false });
 }
 </script>
 
